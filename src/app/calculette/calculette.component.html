@@ -1,0 +1,28 @@
+<div>
+    <label for="premier">Premier nombre </label>
+    <input id="premier" [(ngModel)]="calculette.premier" placeholder="premier nombre">
+</div>
+
+<div>
+    <label for="operateur">Operation </label>
+
+    <select name="operateurs" id="operateur" [(ngModel)]="calculette.operateur">
+        <option value="addition">Addition</option>
+        <option value="soustraction">Soustraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+    </select>
+</div>
+
+<div>
+    <label for="deuxieme">Deuxième nombre </label>
+    <input id="deuxieme" [(ngModel)]="calculette.deuxieme" placeholder="deuxième nombre">
+</div>
+
+
+<button (click)="calculer()">Donner résultat</button>
+
+<div>
+    <label for="resultat">Resultat </label>
+    <input id="resultat" [(ngModel)]="calculette.resultat" placeholder="résultat">
+</div>
